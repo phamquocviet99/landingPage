@@ -1,0 +1,1 @@
+export const imageAuth = "https://i.pinimg.com/564x/09/85/a8/0985a8256a82bb65b87db942a45ed216.jpg"

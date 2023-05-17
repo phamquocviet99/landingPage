@@ -1,0 +1,66 @@
+export const newsInfo = [
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+    {
+        newsImg: "https://pbs.twimg.com/profile_images/1425072918774550534/HdTPb6EA_400x400.jpg",
+        newsTitle: 'Jordan Henderson phát hiện mua hoa ở FMP',
+        newsSummary: 'Tiền vệ đội trưởng của CLB Liverpool được phát hiện mua hoa ở FMP.',
+        newsDate: '18/01/2023',
+        newsAuthor: 'Quang Huy',
+    },
+
+]
