@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { logo } from "../../_global/utils/dataConfig/_global";
-import { HiArrowRight } from "react-icons/hi2";
-import { BiMenu } from "react-icons/bi";
+import { FaBars, FaFacebookF } from "react-icons/fa";
+import { BsYoutube } from "react-icons/bs";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { TbGridDots } from "react-icons/tb";
 export default function Header() {
   const [isOpenMenu, openMenu] = useState(false);
   let Links = [
@@ -11,77 +13,68 @@ export default function Header() {
     // { name: "Dịch vụ", link: "/dich-vu" },
   ];
   return (
-    <div className="relative">
-      {isOpenMenu ? (
-        <div
-          onClick={() => openMenu(!isOpenMenu)}
-          className="fixed h-screen w-screen bg-black bg-opacity-70 z-40"
-        ></div>
-      ) : null}
-      {isOpenMenu ? (
-        <div className="absolute top-20 z-50 w-full p-10 bg-gray-50">
-          <div className="flex flex-col text-center gap-5">
-            {Links.map((link, index) => (
-              <div className="md:ml-8 text-base font-medium  " key={index}>
-                <a
-                  className="text-gray-700 hover:text-gray-900 duration-500 whitespace-nowrap"
-                  // to={link.link}
-                >
-                  {link.name}
-                </a>
-              </div>
-            ))}
-            <a
-              // to={"/vendor"}
-              className="text-white flex text-center items-center gap-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >
-              Trang của bạn
-              <HiArrowRight className="text-xl" />
-            </a>
+    <div className="w-full bg-[#FCFAF7]">
+      <div className=" w-full bg-green-900 rounded-b-3xl container mx-auto">
+        <div className="grid grid-cols-2 py-[20px] px-[50px]">
+          <div>
+            <p className="text-white text-base font-medium">
+              Welcome to Gadden a modern Gardening & Landscape Contact Us
+            </p>
           </div>
-        </div>
-      ) : null}
-      <div className="mx-auto max-w-screen-xl  px-5">
-        <div className="flex justify-between items-center">
-          <div className="shrink-0 mr-4">
-            <a
-             to="/">
-              <img
-                className="object-cover w-full shrink-0 h-20"
-                alt=""
-                src={logo.fmpNoBgBlueTextLogo}
-              />
-            </a>
-          </div>
-
-          <div className="hidden sm:flex items-center gap-5">
-            {Links.map((link, index) => (
-              <div className="md:ml-8 text-base font-medium  " key={index}>
-                <a
-                  className="text-gray-700 hover:text-gray-900 duration-500 whitespace-nowrap"
-                  to={link.link}
-                >
-                  {link.name}
-                </a>
-              </div>
-            ))}
-            <a
-              to={"/vendor"}
-              className="text-white flex items-center gap-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >
-              Trang của bạn
-              <HiArrowRight className="text-xl" />
-            </a>
-            {/* <SwitcheDarkMode /> */}
-          </div>
-          <div
-            onClick={() => openMenu(!isOpenMenu)}
-            className="block sm:hidden text-3xl"
-          >
-            <BiMenu />
+          <div className="flex justify-end  gap-x-3 text-white h-full w-full items-center">
+            <FaFacebookF className="text-base hover:text-green-600 duration-200" />
+            <AiOutlineTwitter className="text-xl hover:text-green-600 duration-200" />
+            <BsYoutube className="text-xl hover:text-green-600 duration-200" />
           </div>
         </div>
       </div>
+      <div className="flex justify-between h-fit container mx-auto px-4 md:px-0 items-center">
+        <div className="flex">
+          <div className="flex items-center gap-x-2">
+            {" "}
+            <img
+              alt=""
+              src={logo.fmpLogoFlowered}
+              className="my-2 h-20 object-cover"
+            />
+            <div>
+              {" "}
+              <p className="font-medium text-3xl text-blue-800">FMP</p>
+              <p className="text-green-900 text-base font-medium">
+                Sàn giao dịch hoa
+              </p>
+            </div>
+          </div>
+
+          <div style={{ width: "1px" }} className=" bg-gray-300 h-24 ml-14" />
+          <div className=" gap-x-7 items-center px-16 text-[18px] font-semibold text-green-900 hidden lg:flex ">
+            <p className="hover:text-green-600 duration-200 cursor-pointer">
+              Trang chủ
+            </p>
+            <p className="hover:text-green-600 duration-200 cursor-pointer">
+              Về chúng tôi
+            </p>
+            <p className="hover:text-green-600 duration-200 cursor-pointer">
+              Giới thiệu
+            </p>
+          </div>
+        </div>
+
+        <div className="w-fit flex justify-end items-center h-full">
+          <button className="py-4 h-fit px-4 bg-green-900 hover:bg-green-600 rounded-2xl text-white font-medium hidden lg:flex whitespace-nowrap">
+            Chưa biết
+          </button>
+          <div
+            style={{ width: "1px" }}
+            className=" bg-gray-300 h-24 mx-14 hidden lg:block"
+          />
+          <TbGridDots className=" text-4xl text-green-900 hover:text-green-600" />
+          <div className="rounded-lg border border-gray-300 p-2 ml-5 cursor-pointer lg:hidden">
+            <FaBars className=" text-3xl text-green-900 " />
+          </div>
+        </div>
+      </div>
+      <div style={{ height: "1px" }} className=" bg-gray-300 w-full" />
     </div>
   );
 }
