@@ -13,8 +13,8 @@ export default function Header() {
     // { name: "Dịch vụ", link: "/dich-vu" },
   ];
   return (
-    <div className="w-full bg-[#FCFAF7]">
-      <div className=" w-full bg-green-900 rounded-b-3xl container mx-auto">
+    <div className="w-full bg-[#FCFAF7] px-5 2xl:px-0">
+      <div className=" w-full bg-green-900 rounded-b-3xl mx-auto max-w-screen-2xl ">
         <div className="grid grid-cols-2 py-[20px] px-[50px]">
           <div>
             <p className="text-white text-base font-medium">
@@ -28,7 +28,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between h-fit container mx-auto px-4 md:px-0 items-center">
+      <div className="flex justify-between h-fit mx-auto max-w-screen-2xl  px-4 md:px-0 items-center">
         <div className="flex">
           <div className="flex items-center gap-x-2">
             {" "}

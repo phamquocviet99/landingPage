@@ -5,10 +5,12 @@ import Header from "./Header/Header";
 
 export default function LandingPage() {
   return (
-    <div className="">
-      <Header />
-      <Body />
-      <Footer />
+    <div className="flex justify-center">
+      <div className="max-w-[1920px]">
+        <Header />
+        <Body />
+        <Footer />
+      </div>
     </div>
   );
 }
