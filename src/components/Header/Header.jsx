@@ -17,8 +17,11 @@ export default function Header() {
       <div className=" w-full bg-green-900 rounded-b-3xl mx-auto max-w-screen-2xl ">
         <div className="grid grid-cols-2 py-[20px] px-[50px]">
           <div>
-            <p className="text-white text-base font-medium">
-              Welcome to Gadden a modern Gardening & Landscape Contact Us
+            <p className="text-white hidden md:block text-xs md:text-base font-medium">
+              Chào mừng bạn đến với FMP - Sàn giao dịch hoa
+            </p>
+            <p className="text-white block md:hidden text-sm md:text-base font-medium">
+              FMP xin chào !
             </p>
           </div>
           <div className="flex justify-end  gap-x-3 text-white h-full w-full items-center">
@@ -35,12 +38,14 @@ export default function Header() {
             <img
               alt=""
               src={logo.fmpLogoFlowered}
-              className="my-2 h-20 object-cover"
+              className="my-2 h-10 md:h-20 object-cover"
             />
             <div>
               {" "}
-              <p className="font-medium text-3xl text-blue-800">FMP</p>
-              <p className="text-green-900 text-base font-medium">
+              <p className="font-medium text-lg md:text-3xl text-blue-800">
+                FMP
+              </p>
+              <p className="text-green-900 text-xs md:text-base font-medium whitespace-nowrap">
                 Sàn giao dịch hoa
               </p>
             </div>
@@ -68,7 +73,7 @@ export default function Header() {
             style={{ width: "1px" }}
             className=" bg-gray-300 h-24 mx-14 hidden lg:block"
           />
-          <TbGridDots className=" text-4xl text-green-900 hover:text-green-600" />
+          <TbGridDots className=" text-4xl text-green-900 hover:text-green-600 hidden md:block " />
           <div className="rounded-lg border border-gray-300 p-2 ml-5 cursor-pointer lg:hidden">
             <FaBars className=" text-3xl text-green-900 " />
           </div>

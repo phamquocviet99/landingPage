@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import bg1 from "../../_global/assets/landingPageAssets/bg1.png";
 import bg6 from "../../_global/assets/landingPageAssets/bg6.png";
+import bg7 from "../../_global/assets/landingPageAssets/bg7.png";
 import bg3 from "../../_global/assets/landingPageAssets/bg3.png";
 import giftBox from "../../_global/assets/landingPageAssets/giftBox.png";
 import anh7 from "../../_global/assets/landingPageAssets/anh7.png";
-import ctabg1 from "../../_global/assets/landingPageAssets/ctabg1.jpg";
+import anh8 from "../../_global/assets/landingPageAssets/anh8.png";
 import background2 from "../../_global/assets/landingPageAssets/background2.jpg";
 import bouquet from "../../_global/assets/landingPageAssets/bouquet.png";
 import quocgia from "../../_global/assets/landingPageAssets/quocgia.png";
@@ -416,11 +417,34 @@ export default function Body() {
         </div>
         <div className=" opacity-25 bg-black h-[600px] w-full"></div>
       </section> */}
-      <PersonEx listPerson={listPerson} />
+      <PersonEx1 listPerson={listPerson} />
+      <section className="py-20 px-10 2xl:px-0 bg-[#FCFAF7]">
+        <div className="mx-auto max-w-screen-xl ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-36 items-center ">
+            <div>
+              <img
+                className="max-h-full object-contain"
+                alt=""
+                src={anh8}
+              ></img>
+            </div>
+
+            <div className="gap-5 flex flex-col mb-10 md:mb-0">
+              <h1 className="mb-4 text-3xl font-extrabold  text-[#F08832] md:text-4xl text-right">
+                Hỗ trợ 24/7
+              </h1>
+              <p className="text-lg font-normal  text-gray-500 lg:text-xl  text-right ">
+                Nhân viên nhà FMP luôn túc trực 24/7 để hỗ trợ bạn với trải
+                nghiệm trên sản phẩm nhà FMP.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
-function PersonEx({ listPerson }) {
+function PersonEx1({ listPerson }) {
   const [show, setShow] = useState(false);
   return (
     <section className="px-10 2xl:px-0">
@@ -456,6 +480,41 @@ function PersonEx({ listPerson }) {
             "
             alt=""
             src={bg6}
+          ></img>
+        </div>
+        <PersonEx2 listPerson={listPerson} />
+      </div>
+    </section>
+  );
+}
+
+function PersonEx2({ listPerson }) {
+  const [show, setShow] = useState(false);
+  return (
+    <section className="px-10 2xl:px-0">
+      <div className="mx-auto max-w-screen-xl  py-8 lg:py-16 ">
+        <div
+          onMouseLeave={() => setShow(false)}
+          onMouseEnter={() => setShow(true)}
+          className="w-full flex justify-center relative mt-20"
+        >
+          {show && (
+            <>
+              {" "}
+              <div className="z-10 right-0 top-5 absolute">
+                <ContentPerson person={listPerson[4]} />
+              </div>
+              <div className="z-10 left-0 top-96 absolute">
+                <ContentPerson person={listPerson[5]} />
+              </div>
+            </>
+          )}
+
+          <img
+            className="max-h-full object-contain min-w-[300px] max-w-[500px]
+            "
+            alt=""
+            src={bg7}
           ></img>
         </div>
       </div>
