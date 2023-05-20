@@ -5,7 +5,7 @@ import Header from "./Header/Header";
 
 export default function LandingPage() {
   return (
-    <div className="flex justify-center">
+    <div className=" block 2xl:flex justify-center">
       <div className="max-w-[1920px]">
         <Header />
         <Body />

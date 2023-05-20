@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import bg1 from "../../_global/assets/landingPageAssets/bg1.png";
+import bg6 from "../../_global/assets/landingPageAssets/bg6.png";
 import bg3 from "../../_global/assets/landingPageAssets/bg3.png";
 import giftBox from "../../_global/assets/landingPageAssets/giftBox.png";
 import anh7 from "../../_global/assets/landingPageAssets/anh7.png";
@@ -32,6 +33,7 @@ import { NavLink } from "react-router-dom";
 import { RxArrowTopRight } from "react-icons/rx";
 import { TbArrowDownLeft } from "react-icons/tb";
 import { BiLeaf } from "react-icons/bi";
+import ContentPerson from "./components/ContentPerson";
 export default function Body() {
   const listPerson = [
     {
@@ -388,7 +390,7 @@ export default function Body() {
           </div>
         </div>
       </section>
-      <section
+      {/* <section
         className="bg-fixed bg-no-repeat bg-center bg-cover relative w-full"
         style={{ backgroundImage: `url(${background2})` }}
       >
@@ -413,7 +415,50 @@ export default function Body() {
           </div>
         </div>
         <div className=" opacity-25 bg-black h-[600px] w-full"></div>
-      </section>
+      </section> */}
+      <PersonEx listPerson={listPerson} />
     </div>
+  );
+}
+function PersonEx({ listPerson }) {
+  const [show, setShow] = useState(false);
+  return (
+    <section className="px-10 2xl:px-0">
+      <div className="mx-auto max-w-screen-xl  py-8 lg:py-16 ">
+        <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-center leading-none text-gray-900  lg:text-5xl ">
+          Nguồn nhân lực của chúng tôi
+        </h1>
+        <div
+          onMouseLeave={() => setShow(false)}
+          onMouseEnter={() => setShow(true)}
+          className="w-full flex justify-center relative mt-20"
+        >
+          {show && (
+            <>
+              {" "}
+              <div className="z-10 left-10 top-5 absolute">
+                <ContentPerson person={listPerson[0]} />
+              </div>
+              <div className="z-10 left-0 top-96 absolute">
+                <ContentPerson person={listPerson[2]} />
+              </div>
+              <div className="z-10 right-0 top-96 absolute">
+                <ContentPerson person={listPerson[3]} />
+              </div>
+              <div className="z-10 right-0 top-5 absolute">
+                <ContentPerson person={listPerson[1]} />
+              </div>
+            </>
+          )}
+
+          <img
+            className="max-h-full object-contain min-w-[300px] max-w-[600px]
+            "
+            alt=""
+            src={bg6}
+          ></img>
+        </div>
+      </div>
+    </section>
   );
 }
