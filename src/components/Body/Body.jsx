@@ -93,17 +93,18 @@ export default function Body() {
       <section className=" block lg:flex justify-end items-center gap-x-20 py-40 px-10 2xl:px-0 bg-[#FCFAF7]">
         <div className="max-w-[750px]">
           <h1 className="font-bold text-green-900  text-4xl md:text-5xl lg:text-6xl ">
-            Green Environments Make You Happy and provide Oxygen
+            Nơi giao nhau giữa những tâm hồn yêu hoa !
           </h1>
           <h2 className="text-2xl font-medium mt-7 text-black">
-            We Provide Beautiful Gardening & Landscaping
+            Sàn giao dịch hoe FMP là một nền tảng trực tuyến để đưa hoa từ nhà
+            cung cấp đến nơi tiêu thụ.
           </h2>
           <div className="flex gap-x-5 mt-10">
             <button className="px-12 py-4 text-lg font-medium text-black rounded-2xl bg-[#F1D2A9] hover:bg-green-700 hover:text-white duration-300">
-              Explore More
+              Về chúng tôi
             </button>
             <button className="px-12 py-4 border text-lg font-medium text-black rounded-2xl bg-transparent hover:bg-green-700 hover:text-white duration-300">
-              How It Work
+              Cách hoạt động
             </button>
           </div>
         </div>
@@ -153,11 +154,12 @@ export default function Body() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 items-center">
               <div className="gap-5 flex flex-col mb-10 md:mb-0 justify-end text-center md:text-right  items-end px-5">
                 <h1 className="mb-4 text-4xl font-extrabold  leading-none tracking-tight text-gray-900 lg:text-4xl dark:text-white">
-                  Giải pháp cung cấp hoa tươi cho thị trường
+                  Giải pháp đảm bảo đầu ra cho nhà vườn
                 </h1>
                 <p className="text-lg font-normal  text-gray-500 lg:text-xl dark:text-gray-400">
-                  Ở <strong>FMP</strong> chúng tôi đặt niềm tin của khách hàng
-                  là chân ái cho mọi hoạt động. Uy tín luôn được đảm bảo!
+                  Ở <strong>FMP</strong> chúng tôi thấu hiểu mất mát những mùa
+                  vụ đầu ra không ổn định, vì thế sàn giao dịch tạo kết nối trực
+                  tiếp từ nhà vườn đến thẳng các nơi tiêu thụ
                 </p>
                 <div className="flex w-full justify-center md:justify-end">
                   <button className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
