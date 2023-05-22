@@ -565,7 +565,7 @@ export default function Body() {
         </div>
 
         {resource?.map((e, i) => (
-          <div className="w-full mt-[5vw] p-[5% 2%] lg:hidden">
+          <div className="w-full mt-5 p-[5% 2%] lg:hidden">
             <div
               className="flex w-full gap-[5%] justify-center items-center "
               style={
@@ -574,15 +574,9 @@ export default function Body() {
                 }
               }
             >
-              <img alt="" className="w-1/5" src={e?.img} />
-              <div className="w-2/3 text-[1.8vw] whitespace-break-spaces ">
-                <div
-                  style={{
-                    fontWeight: "600",
-                    fontSize: "2vw",
-                    marginBottom: "1vw",
-                  }}
-                >
+              <img alt="" className="w-1/4" src={e?.img} />
+              <div className="w-2/3 text-sm md:text-[1.8vw] whitespace-break-spaces ">
+                <div className="font-semibold text-base mb-[1vw] md:text-[2vw]">
                   {e?.name} <br />
                   {e?.position}
                 </div>
