@@ -35,6 +35,62 @@ import { RxArrowTopRight } from "react-icons/rx";
 import { TbArrowDownLeft } from "react-icons/tb";
 import { BiLeaf } from "react-icons/bi";
 import ContentPerson from "./components/ContentPerson";
+import image from "../../_global/assets/resources/bg6.png";
+import image2 from "../../_global/assets/resources/bg7.png";
+import TranThiHuuAi from "../../_global/assets/resources/1.png";
+import PhanHieuThien from "../../_global/assets/resources/2.png";
+import LuongNgocTrung from "../../_global/assets/resources/3.png";
+import ChauHongAnh from "../../_global/assets/resources/4.png";
+import NguyenThienBao from "../../_global/assets/resources/5.png";
+import PhanMinhTai from "../../_global/assets/resources/6.png";
+
+import "./style.css";
+
+const resource = [
+  {
+    name: "Bà Trần Thị Hữu Ái",
+    img: TranThiHuuAi,
+    position: "CEO",
+    description:
+      "• Có hơn 20 năm kinh nghiệm ứng dụng CNTT vào quản lí và điều hành kinh doanh, trong đó có quản lí dự án ngành CNTT \n• Có hơn 10 năm kinh nghiệm kinh doanh trồng và phân phối ngành hoa tươi \n• Hơn 5 năm Ngành Chăm sóc sức khỏe chủ động",
+  },
+  {
+    name: "Bà Phan Hiếu Thiện",
+    img: PhanHieuThien,
+    position: "Giám đốc điều hành",
+    description:
+      "• Có 20 năm kinh nghiệm vai trò lãnh đạo cấp Phường \n• Có hơn  20 năm chuyên ngành dịch vụ báo cáo thuế cho các doanh nghiệp",
+  },
+  {
+    name: "Ông Lương Ngọc Trung",
+    img: LuongNgocTrung,
+    position: "Giám đốc chiến lược",
+    description:
+      "• Có hơn 30 năm kinh nghiệm ứng dụng CNTT vào quản lí và điều hành kinh doanh, trong đó có quản lí dự án ngành cơ khí và ngành Sơn \n• Từng là nhà huấn luyện doanh nghiệp tại ACTION COACH \n• Hiện tại, Ông đang quản lí nhiều dự án xã hội mang tầm cỡ quốc gia",
+  },
+  {
+    name: "Bà Châu Hồng Anh",
+    img: ChauHongAnh,
+    position: "Giám đốc sáng tạo",
+    description:
+      "• Có hơn 20 năm kinh nghiệm ứng dụng CNTT vào quản lí và điều hành công ty đào tạo và huấn luyện doanh nghiệp trong và ngoài nước",
+  },
+  {
+    name: "Ông Nguyễn Thiên Bảo",
+    img: NguyenThienBao,
+    position: "Giám đốc R&D",
+    description:
+      "• Ông tốt nghiệp tiến sĩ AIAI tại Thụy Sĩ, và công tác  tại Mỹ 3 năm \n• HIện tại, ông là chuyên gia trí tuệ nhân tạo (AI) trẻ tuổi hàng đầu tại Viêt Nam",
+  },
+  {
+    name: "Ông Phan Minh Tài",
+    img: PhanMinhTai,
+    position: "Giám đốc CNTT",
+    description:
+      "• Hơn 10 năm kinh nghiệm ROBOT \n• Ông là người đầu tiên dùng BOT để khớp lệnh giao dịch chứng khoán giữa 2 sàn \n• Xây dựng hệ thống website kinh doanh online tại Mĩ hoàn toàn tự động",
+  },
+];
+
 export default function Body() {
   const listPerson = [
     {
@@ -419,7 +475,7 @@ export default function Body() {
         </div>
         <div className=" opacity-25 bg-black h-[600px] w-full"></div>
       </section> */}
-      <PersonEx1 listPerson={listPerson} />
+      {/* <PersonEx1 listPerson={listPerson} /> */}
       <section className="py-20 px-10 2xl:px-0 bg-[#FCFAF7]">
         <div className="mx-auto max-w-screen-xl ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-36 items-center ">
@@ -443,9 +499,131 @@ export default function Body() {
           </div>
         </div>
       </section>
+
+      <section>
+        <div className="hidden lg:grid">
+          <div className="flex items-center w-full pt-[5vw]">
+            <div className="w-1/3 p-[2%] text-3xl text-orange-500 font-extrabold">
+              Các nhà kinh doanh hàng đầu trong lĩnh vực kinh doanh của mình
+            </div>
+            <div className="w-2/3 flex justify-center">
+              <div className="relative w-[25vw] h-[27vw]">
+                <InfoCard
+                  bottom={"60%"}
+                  right={"85%"}
+                  color={"blue"}
+                  resource={resource[0]}
+                />
+                <InfoCard
+                  top={"60%"}
+                  right={"87%"}
+                  color={"blue"}
+                  resource={resource[2]}
+                />
+                <InfoCard
+                  bottom={"55%"}
+                  left={"85%"}
+                  color={"orange"}
+                  resource={resource[1]}
+                />
+                <InfoCard
+                  top={"70%"}
+                  left={"83%"}
+                  color={"orange"}
+                  resource={resource[3]}
+                />
+                <img alt="" className="w-full h-full" src={image} />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center mt-[8vw]">
+            <div className="w-2/3 flex justify-center">
+              <div className="relative w-[22vw] h-[28vw]">
+                <InfoCard
+                  bottom={"25%"}
+                  right={"83%"}
+                  color={"orange"}
+                  resource={resource[5]}
+                />
+
+                <InfoCard
+                  top={"30%"}
+                  left={"80%"}
+                  color={"blue"}
+                  resource={resource[4]}
+                />
+                <img alt="" className="w-full h-full" src={image2} />
+              </div>
+            </div>
+
+            <div className="w-1/3 text-right p-[2%] text-3xl text-blue-500 font-extrabold">
+              Cùng các chuyên gia công nghệ Hàng đầu của Việt Nam và đặc biệt:
+              Bot và AI.
+            </div>
+          </div>
+        </div>
+
+        {resource?.map((e, i) => (
+          <div className="w-full mt-[5vw] p-[5% 2%] lg:hidden">
+            <div
+              className="flex w-full gap-[5%] justify-center items-center "
+              style={
+                {
+                  // flexDirection: i % 2 !== 0 && "row-reverse",
+                }
+              }
+            >
+              <img alt="" className="w-1/5" src={e?.img} />
+              <div className="w-2/3 text-[1.8vw] whitespace-break-spaces ">
+                <div
+                  style={{
+                    fontWeight: "600",
+                    fontSize: "2vw",
+                    marginBottom: "1vw",
+                  }}
+                >
+                  {e?.name} <br />
+                  {e?.position}
+                </div>
+
+                {e?.description}
+              </div>
+            </div>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }
+
+const InfoCard = ({ top, right, bottom, left, color, resource }) => {
+  return (
+    <div
+      className="absolute w-[20vw] bg-white rounded shadow-xl"
+      id="info-card"
+      style={{
+        bottom: bottom,
+        right: right,
+        top: top,
+        left: left,
+      }}
+    >
+      <div
+        className={`font-bold text-[1.4vw] text-${color}-500`}
+        style={{ color: color }}
+      >
+        {resource?.name}
+        <div className={`text-${color}-600 font-semibold text-[1.2vw]`}>
+          {resource?.position}
+        </div>
+      </div>
+
+      <div className="content">{resource?.description}</div>
+    </div>
+  );
+};
+
 function PersonEx1({ listPerson }) {
   const [show, setShow] = useState(false);
   return (
